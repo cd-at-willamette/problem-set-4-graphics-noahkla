@@ -18,8 +18,17 @@ def draw_image():
     gw = GWindow(WIDTH, HEIGHT)
     
     # And now it is your turn! Add your code below! Make sure you meet all the requirements!
-
-
+    r = GRect(150, 150, 200, 200)
+    r.set_color('Red')
+    r.set_filled(True)
+    gw.add(r)
+    l = GLine(100, 20, 100, 500)
+    l.set_color('Grey')
+    gw.add(l)
+    o = GOval(300, 500)
+    o.set_color('Blue')
+    gw.add(o)
+    gw.add(GLabel('Problem one', 300, 400))
 
 
 
